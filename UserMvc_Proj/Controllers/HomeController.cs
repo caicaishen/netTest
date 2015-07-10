@@ -26,5 +26,14 @@ namespace UserMvc_Proj.Controllers
 
             return View();
         }
+
+        public ActionResult GetData(string das,string daa)
+        {
+           
+           
+
+
+            return View();
+        }
     }
 }

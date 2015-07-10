@@ -28,4 +28,24 @@
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
+    <input type="button"  value="服务器发送数据" onclick="sdf()"/>
 </div>
+<script type="text/javascript">
+    //$(document).ready(function()
+        
+        
+        
+    //    ))
+    function sdf() {
+        alert("sdfsdf");
+        $.ajax({
+            type: "GET",
+            url: "../home/getdata",
+            data: {das:'shendada1',daa:'shendada2' },
+            dataType: "json",
+            success: function (data) { }
+        });
+        alert("success");
+    }
+
+</script>
