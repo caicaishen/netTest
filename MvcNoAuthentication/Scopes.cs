@@ -23,6 +23,17 @@ namespace MvcNoAuthentication
                 {
                     new ScopeClaim("role")
                 }
+            },
+              new Scope
+            {
+                Enabled = true,
+                Name = "sampleApi",
+                Description = "Access to a sample API",
+                 Claims = new List<ScopeClaim>
+                {
+                    new ScopeClaim("role")
+                },
+                Type = ScopeType.Resource
             }
         };
 

@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcNoAuthentication.Tests",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAuthentication", "MvcAuthentication\MvcAuthentication.csproj", "{A8FDAF13-EB14-44B3-A80F-7931D57161B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{83BA9162-1BC7-4F3E-B85E-729D05369727}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{A8FDAF13-EB14-44B3-A80F-7931D57161B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8FDAF13-EB14-44B3-A80F-7931D57161B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8FDAF13-EB14-44B3-A80F-7931D57161B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83BA9162-1BC7-4F3E-B85E-729D05369727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83BA9162-1BC7-4F3E-B85E-729D05369727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83BA9162-1BC7-4F3E-B85E-729D05369727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83BA9162-1BC7-4F3E-B85E-729D05369727}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -14,7 +14,8 @@ namespace MvcNoAuthentication.Controllers
         {
             return View();
         }
-        [Authorize]
+      //  [Authorize]
+        [Auth(Roles = "Geek")]
         public ActionResult About()
         {
         //    ViewBag.Message = "Your application description page.";
@@ -34,5 +35,35 @@ namespace MvcNoAuthentication.Controllers
 
             return View();
         }
+        [HandleForbidden]
+        public ActionResult UpdateContact()
+        {
+            if (!HttpContext.CheckAccess("Write", "ContactDetails", "some more data"))
+            {
+                // either 401 or 403 based on authentication state
+                return this.AccessDenied();
+            }
+
+            ViewBag.Message = "Update your contact details!";
+            return View();
+        }
+
+        //[ResourceAuthorize("Write", "ContactDetails")]
+        //[HandleForbidden]
+        //public ActionResult UpdateContact()
+        //{
+        //    ViewBag.Message = "Update your contact details!";
+
+        //    return View();
+        //}
+
+        public ActionResult Logout()
+        {
+            Request.GetOwinContext().Authentication.SignOut();
+            return Redirect("/");
+        }
+
+
+
     }
 }
