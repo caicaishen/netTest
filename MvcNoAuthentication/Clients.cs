@@ -21,7 +21,7 @@ namespace MvcNoAuthentication
 
                 RedirectUris = new List<string>
                 {
-                    "https://localhost:44319/"
+                    "http://localhost:44300/home/about"
                 }
             }
         };
