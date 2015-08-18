@@ -1,0 +1,6 @@
+C:\Users\sweetyuser\Documents\GitHub\SilverlightApplication2.Web\bin\SilverlightApplication2.Web.dll.config
+C:\Users\sweetyuser\Documents\GitHub\SilverlightApplication2.Web\bin\SilverlightApplication2.Web.dll
+C:\Users\sweetyuser\Documents\GitHub\SilverlightApplication2.Web\bin\SilverlightApplication2.Web.pdb
+C:\Users\sweetyuser\Documents\GitHub\SilverlightApplication2.Web\obj\Debug\SilverlightApplication2.Web.csprojResolveAssemblyReference.cache
+C:\Users\sweetyuser\Documents\GitHub\SilverlightApplication2.Web\obj\Debug\SilverlightApplication2.Web.dll
+C:\Users\sweetyuser\Documents\GitHub\SilverlightApplication2.Web\obj\Debug\SilverlightApplication2.Web.pdb

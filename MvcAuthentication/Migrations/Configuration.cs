@@ -14,6 +14,7 @@ namespace MvcAuthentication.Migrations
 
         protected override void Seed(MvcAuthentication.DAL.AccountContext context)
         {
+           // context.r
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 

@@ -18,7 +18,7 @@ namespace MvcNoAuthentication
             else
             {
                 // 401 who are you? go login and then try again
-                filterContext.Result = new HttpUnauthorizedResult(); ;
+                filterContext.Result = new HttpUnauthorizedResult(); 
             }
         }
     }

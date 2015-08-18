@@ -10,6 +10,7 @@ using System.Web.Security;
 using System.Web.Mvc;
 using System.Web;
 using MvcAuthentication.Security;
+using System.Collections;
 
 namespace MvcAuthentication
 {
@@ -138,65 +139,48 @@ namespace MvcAuthentication
 
             public override void OnAuthorization(AuthorizationContext filterContext)
             {
+                var dd = filterContext.HttpContext.Request.Form["Email"];
                 // var s=  System.Web.Caching.Cache[];
                 string sds = this.Roles;
                 var cocache = filterContext.HttpContext.Cache["UserMessage"];
-                bool IsA = HttpContext.Current.User.Identity.IsAuthenticated;
+                //Hashtable userMessage = new Hashtable();
+                //userMessage.Add("UserID", model.Email);
+                //userMessage.Add("UserPassword", model.Email);
+
+                Hashtable hasht = cocache as Hashtable;
+              string username=  hasht["UserID"].ToString();
+              string userpwd = hasht["UserPassword"].ToString();
+               // bool IsA = HttpContext.Current.User.Identity.IsAuthenticated;
                 if (filterContext.ActionDescriptor.ActionName.ToLower() == "login")
                 { }
                 else
                 {
 
-                    if (HttpContext.Current.User.Identity.IsAuthenticated)
-                    {
-
+                    
                         //这一步很重要，要代替.NET的自身的User.  
 
                         // IPrincipal
-                        MyPrincipal MyPrincipal = new MyPrincipal(2);
-
+                        MyPrincipal MyPrincipal = new MyPrincipal(username,userpwd);
+                    bool sd=    MyPrincipal.Identity.IsAuthenticated;
                         HttpContext.Current.User = MyPrincipal;
 
+                        if (HttpContext.Current.User.Identity.IsAuthenticated)
+                            return;
+                        else {
+                            FormsAuthentication.SignOut();
+                            filterContext.Result = new RedirectResult("/account/Login");
+                     
+                        }
 
 
 
-                        string ss = "4562";
-                        //if ((!MyPrincipal.IsPermissionID(_permissionID)) && (_permissionID != 0))
-                        //{
 
-                        //    HttpContext.Current.Response.Clear();
+                    
 
-                        //    HttpContext.Current.Response.Write("<script defer>window.alert('无权操作！');history.back();</script>");
+                   
 
-                        //    HttpContext.Current.Response.End();
-
-                        //    filterContext.Result = new EmptyResult();
-
-                        //}
-
-                    }
-
-                    else
-                    {
-
-                        FormsAuthentication.SignOut();
-                        filterContext.Result = new RedirectResult("/account/Login");
-                        //HttpContext.Current.Response.Clear();
-
-                        //HttpContext.Current.Response.Write("<script defer>window.alert('无权操作！或当前登录用户已过期！\\n请重新登录或与管理员联系！');</script>");
-
-                        // HttpContext.Current.Response.End();
-
-                        // HttpContext.Current.Response.Redirect("http://localhost:1407/account/register");
-                        //  HttpContext.Current.Response.RedirectToRoute()
-
-
-                        //var Url = new UrlHelper(filterContext.RequestContext);
-                        //var url =  Url.Action("Register", "Account");
-                        //filterContext.Result = new RedirectResult(url);
-                        // filterContext.Result=;
-                        //
-                    }
+                      
+                    
 
                 }
             }

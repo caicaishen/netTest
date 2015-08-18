@@ -1,0 +1,8 @@
+C:\Users\sweetyuser\Documents\GitHub\Con_Proj\bin\Debug\Con_Proj.exe.config
+C:\Users\sweetyuser\Documents\GitHub\Con_Proj\bin\Debug\Con_Proj.exe
+C:\Users\sweetyuser\Documents\GitHub\Con_Proj\bin\Debug\Con_Proj.pdb
+C:\Users\sweetyuser\Documents\GitHub\Con_Proj\obj\Debug\Con_Proj.exe
+C:\Users\sweetyuser\Documents\GitHub\Con_Proj\obj\Debug\Con_Proj.pdb
+C:\Users\sweetyuser\Documents\GitHub\Con_Proj\obj\Debug\Con_Proj.csprojResolveAssemblyReference.cache
+C:\Users\sweetyuser\Documents\GitHub\Con_Proj\obj\Debug\Con_Proj.Resource1.resources
+C:\Users\sweetyuser\Documents\GitHub\Con_Proj\obj\Debug\Con_Proj.csproj.GenerateResource.Cache

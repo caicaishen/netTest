@@ -40,6 +40,7 @@ namespace MvcAuthentication.DAL
            // modelBuilder.Entity<User>().Property(item => item.UserID).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
            // modelBuilder.Entity<User>().ToTable("ac_User");
            // modelBuilder.Configurations.Add(new User());
+           // modelBuilder.Entity<User>().Property(item=>item.Country).h
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
     }

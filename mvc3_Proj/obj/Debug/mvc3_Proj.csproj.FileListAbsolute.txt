@@ -1,1 +1,2 @@
 D:\vs.Test.Mine\test_Proj\mvc3_Proj\obj\Debug\mvc3_Proj.csprojResolveAssemblyReference.cache
+C:\Users\sweetyuser\Documents\GitHub\mvc3_Proj\obj\Debug\mvc3_Proj.csprojResolveAssemblyReference.cache

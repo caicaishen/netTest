@@ -14,7 +14,7 @@ namespace MvcAuthentication.DAL
     //    [Key]
     //    public int UserID { get; set; }
 
-
+        
     //    public string UserName { get; set; }
 
     //    //     public int TargetCityID { get; set; }
@@ -110,6 +110,7 @@ namespace MvcAuthentication.DAL
         [MaxLength(15)]
         public string Password { get; set; }
         [MaxLength(50)]
+  
         public string Country { get; set; }
         [MaxLength(30)]
         public string Email { get; set; }

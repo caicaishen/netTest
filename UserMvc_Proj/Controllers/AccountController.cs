@@ -9,6 +9,9 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using UserMvc_Proj.Models;
+using UserMvc_Proj.bussiness;
+using Microsoft.Practices.Unity;
+using UserMvc_Proj.Interfaces;
 
 namespace UserMvc_Proj.Controllers
 {
@@ -44,8 +47,49 @@ namespace UserMvc_Proj.Controllers
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
         {
+
+
+       //     Users curUser = new Users();
+           // var dd = curUser.GetALL();
+            IUnityContainer container = new UnityContainer();
+            #region Ilogger
+            //        container.RegisterType<ILogger, ConsoleLogger>();
+
+            //        ILogger logger = container.Resolve<ILogger>();
+
+            //string dd=        logger.Log("Have a look!");
+
+
+            //container.RegisterType<ILogger, NullLogger>();
+
+            //ILogger logger2 = container.Resolve<ILogger>();
+            //string dd2 = logger2.Log("Have a look!"); 
+            #endregion
+
+            container.RegisterType<IOrder, CommonOrder>(new ContainerControlledLifetimeManager());
+
+            IOrder order = container.Resolve<IOrder>();
+            order.Discount = 0.8;
+
+
+            IOrder order2 = container.Resolve<IOrder>();
+            string dd = order2.DumpDiscount();
+
             ViewBag.ReturnUrl = returnUrl;
             return View();
+        }
+
+
+        //
+        // GET: /Account/Login
+        [AllowAnonymous]
+        public string TestUnit(LoginViewModel ssd)
+        {
+            if (ssd.Email == "11@qq.com")
+                return "正确";
+            else
+                return "cuowu";
+          
         }
 
         private ApplicationSignInManager _signInManager;
@@ -70,7 +114,7 @@ namespace UserMvc_Proj.Controllers
             {
                 return View(model);
             }
-
+           
             // 这不会计入到为执行帐户锁定而统计的登录失败次数中
             // 若要在多次输入错误密码的情况下触发帐户锁定，请更改为 shouldLockout: true
             var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
@@ -89,6 +133,12 @@ namespace UserMvc_Proj.Controllers
             }
         }
 
+
+        public ApplicationSignInManager signinm()
+        {
+
+            return SignInManager;
+        }
         //
         // GET: /Account/VerifyCode
         [AllowAnonymous]
@@ -237,7 +287,8 @@ namespace UserMvc_Proj.Controllers
         [AllowAnonymous]
         public ActionResult ResetPassword(string code)
         {
-            return code == null ? View("Error") : View();
+           // return code == null ? View("Error") : View();
+            return View();
         }
 
         //
@@ -247,22 +298,26 @@ namespace UserMvc_Proj.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> ResetPassword(ResetPasswordViewModel model)
         {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
+            //if (!ModelState.IsValid)
+            //{
+            //    return View(model);
+            //}
             var user = await UserManager.FindByNameAsync(model.Email);
             if (user == null)
             {
                 // 请不要显示该用户不存在
                 return RedirectToAction("ResetPasswordConfirmation", "Account");
             }
-            var result = await UserManager.ResetPasswordAsync(user.Id, model.Code, model.Password);
-            if (result.Succeeded)
-            {
-                return RedirectToAction("ResetPasswordConfirmation", "Account");
-            }
-            AddErrors(result);
+            var result = UserManager.ChangePassword(user.Id, model.Password, model.ConfirmPassword);
+            if (result != null)
+                return View();
+               
+           // var result = await UserManager.ResetPasswordAsync(user.Id, model.Code, model.Password);
+            //if (result.Succeeded)
+            //{
+            //    return RedirectToAction("ResetPasswordConfirmation", "Account");
+            //}
+            //AddErrors(result);
             return View();
         }
 

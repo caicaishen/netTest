@@ -1,0 +1,7 @@
+C:\Users\sweetyuser\Documents\GitHub\MyUnitTestTests\bin\Debug\MyUnitTestTests.dll
+C:\Users\sweetyuser\Documents\GitHub\MyUnitTestTests\bin\Debug\MyUnitTestTests.pdb
+C:\Users\sweetyuser\Documents\GitHub\MyUnitTestTests\bin\Debug\MyUnitTest.exe
+C:\Users\sweetyuser\Documents\GitHub\MyUnitTestTests\bin\Debug\MyUnitTest.pdb
+C:\Users\sweetyuser\Documents\GitHub\MyUnitTestTests\obj\Debug\MyUnitTestTests.csprojResolveAssemblyReference.cache
+C:\Users\sweetyuser\Documents\GitHub\MyUnitTestTests\obj\Debug\MyUnitTestTests.dll
+C:\Users\sweetyuser\Documents\GitHub\MyUnitTestTests\obj\Debug\MyUnitTestTests.pdb

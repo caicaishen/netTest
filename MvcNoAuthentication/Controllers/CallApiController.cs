@@ -53,9 +53,18 @@ namespace MvcNoAuthentication.Controllers
         {
             var client = new HttpClient();
             client.SetBearerToken(token);
+            try
+            {
+                var json = await client.GetStringAsync("https://localhost:44302/identity");
+                return JArray.Parse(json).ToString();
+            }
+            catch (Exception ex)
+            {
+                
+                throw ex;
+            }
 
-            var json = await client.GetStringAsync("https://localhost:44302/identity");
-            return JArray.Parse(json).ToString();
+            
         }
     }
 }

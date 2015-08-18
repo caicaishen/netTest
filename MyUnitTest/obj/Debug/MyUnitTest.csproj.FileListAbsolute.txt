@@ -1,0 +1,6 @@
+C:\Users\sweetyuser\Documents\GitHub\MyUnitTest\bin\Debug\MyUnitTest.exe.config
+C:\Users\sweetyuser\Documents\GitHub\MyUnitTest\bin\Debug\MyUnitTest.exe
+C:\Users\sweetyuser\Documents\GitHub\MyUnitTest\bin\Debug\MyUnitTest.pdb
+C:\Users\sweetyuser\Documents\GitHub\MyUnitTest\obj\Debug\MyUnitTest.csprojResolveAssemblyReference.cache
+C:\Users\sweetyuser\Documents\GitHub\MyUnitTest\obj\Debug\MyUnitTest.exe
+C:\Users\sweetyuser\Documents\GitHub\MyUnitTest\obj\Debug\MyUnitTest.pdb

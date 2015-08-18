@@ -146,6 +146,7 @@ namespace UserMvc_Proj.Controllers
             var user = await UserManager.FindByIdAsync(User.Identity.GetUserId());
             if (user != null)
             {
+
                 await SignInAsync(user, isPersistent: false);
             }
             return RedirectToAction("Index", "Manage");

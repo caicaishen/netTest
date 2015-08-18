@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1006]C:\Users\sweetyuser\Documents\GitHub\UserMvc_Proj\bin\UserMvc_Proj.dll</TopNode>
+  <SelectedNode>[0-1001]UserMvc_Proj.bussiness.Test.UsersTest.MyFirstTest</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1006]C:\Users\sweetyuser\Documents\GitHub\UserMvc_Proj\bin\UserMvc_Proj.dll" Expanded="true" />
+    <Node UniqueName="[0-1007]UserMvc_Proj" Expanded="true" />
+    <Node UniqueName="[0-1008]UserMvc_Proj.bussiness" Expanded="true" />
+    <Node UniqueName="[0-1009]UserMvc_Proj.bussiness.Test" Expanded="true" />
+    <Node UniqueName="[0-1000]UserMvc_Proj.bussiness.Test.UsersTest" Expanded="true" />
+  </Nodes>
+</VisualState>

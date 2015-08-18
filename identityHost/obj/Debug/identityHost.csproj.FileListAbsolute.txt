@@ -1,1 +1,11 @@
 D:\vs.Test.Mine\test_Proj\identityHost\bin\Debug\identityHost.exe.config
+C:\Users\sweetyuser\Documents\GitHub\identityHost\bin\Debug\identityHost.exe.config
+C:\Users\sweetyuser\Documents\GitHub\identityHost\bin\Debug\identityHost.exe
+C:\Users\sweetyuser\Documents\GitHub\identityHost\bin\Debug\identityHost.pdb
+C:\Users\sweetyuser\Documents\GitHub\identityHost\bin\Debug\Owin.dll
+C:\Users\sweetyuser\Documents\GitHub\identityHost\bin\Debug\Thinktecture.IdentityServer3.dll
+C:\Users\sweetyuser\Documents\GitHub\identityHost\bin\Debug\Thinktecture.IdentityServer3.pdb
+C:\Users\sweetyuser\Documents\GitHub\identityHost\bin\Debug\Thinktecture.IdentityServer3.xml
+C:\Users\sweetyuser\Documents\GitHub\identityHost\obj\Debug\identityHost.csprojResolveAssemblyReference.cache
+C:\Users\sweetyuser\Documents\GitHub\identityHost\obj\Debug\identityHost.exe
+C:\Users\sweetyuser\Documents\GitHub\identityHost\obj\Debug\identityHost.pdb

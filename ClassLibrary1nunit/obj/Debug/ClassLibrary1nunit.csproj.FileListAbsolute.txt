@@ -1,0 +1,7 @@
+C:\Users\sweetyuser\Documents\GitHub\ClassLibrary1nunit\bin\Debug\ClassLibrary1nunit.dll
+C:\Users\sweetyuser\Documents\GitHub\ClassLibrary1nunit\bin\Debug\ClassLibrary1nunit.pdb
+C:\Users\sweetyuser\Documents\GitHub\ClassLibrary1nunit\bin\Debug\nunit.framework.dll
+C:\Users\sweetyuser\Documents\GitHub\ClassLibrary1nunit\bin\Debug\nunit.framework.xml
+C:\Users\sweetyuser\Documents\GitHub\ClassLibrary1nunit\obj\Debug\ClassLibrary1nunit.csprojResolveAssemblyReference.cache
+C:\Users\sweetyuser\Documents\GitHub\ClassLibrary1nunit\obj\Debug\ClassLibrary1nunit.dll
+C:\Users\sweetyuser\Documents\GitHub\ClassLibrary1nunit\obj\Debug\ClassLibrary1nunit.pdb

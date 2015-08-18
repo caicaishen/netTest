@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MvcAuthentication.DAL;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace MvcAuthentication.Security
         private int _userID;
         private string _userName;
         private string _phone;
+        private string _pwd;
 
         public string UserName
         {
@@ -30,24 +32,38 @@ namespace MvcAuthentication.Security
 
         }
 
+        public string Pwd
+        {
+            get { return _pwd; }
+        }
+
         private bool CanPass()
         {
-            //这里朋友们可以根据自己的需要改为从数据库中验证用户名和密码， 
-            //这里为了方便我直接指定的字符串 
-            if (_userName == "516365717@qq.com")
+            AccountContext acContext=new AccountContext();
+
+         var cuser=   acContext.Users.Where(m => m.Name == _userName & m.Password == _pwd).FirstOrDefault();
+            if (cuser!=null)
             {
+                this._userID = cuser.UserID;
                 return true;
             }
+            //这里朋友们可以根据自己的需要改为从数据库中验证用户名和密码， 
+            //这里为了方便我直接指定的字符串 
+            //if (_userName == "516365717@qq.com")
+            //{
+            //    return true;
+            //}
             else
             {
                 return false;
             }
         } 
-        public MyIdentity(string UserName)
+        public MyIdentity(string UserName,string Pwd)
         {
             this._userName =UserName;
-            this._userID = 2;
-            this._phone = "6623428346283";
+           // this._userID = 2;
+            //this._phone = "6623428346283";
+            this._pwd = Pwd;
 
         }
 
@@ -135,9 +151,9 @@ namespace MvcAuthentication.Security
             return false;
         }
 
-        public MyPrincipal(string UserName)
+        public MyPrincipal(string UserName,string Pwd)
         {
-            _identity = new MyIdentity(UserName);
+            _identity = new MyIdentity(UserName,Pwd);
             _permissionList.Add(1);
             _permissionList.Add(2);
             _permissionList.Add(3);

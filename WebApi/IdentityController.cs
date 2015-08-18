@@ -11,7 +11,7 @@ namespace WebApi
     [Authorize]
     public class IdentityController : ApiController
     {
-     
+       
         public IHttpActionResult Get()
         {
             var user = User as ClaimsPrincipal;
@@ -24,5 +24,6 @@ namespace WebApi
 
             return Json(claims);
         }
+      
     }
 }

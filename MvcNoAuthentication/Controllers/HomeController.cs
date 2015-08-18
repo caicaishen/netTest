@@ -10,10 +10,33 @@ namespace MvcNoAuthentication.Controllers
 {
     public class HomeController : Controller
     {
+
+
         public ActionResult Index()
         {
+            ViewBag.Mes = "sdfsdf";
+            throw new Exception("sdfsdf");
             return View();
         }
+
+        public int ToInt(string value)
+        {
+            int result = 0;
+            if (!string.IsNullOrWhiteSpace(value))
+            {
+                if (!int.TryParse(value, out result))
+                {
+                    throw new Exception("文本内容无法转换为Int类型。");
+                }
+            }
+            else
+            {
+                throw new Exception("文本不能为空。");
+            }
+            return result;
+        }
+     
+
       //  [Authorize]
         [Auth(Roles = "Geek")]
         public ActionResult About()
@@ -22,7 +45,7 @@ namespace MvcNoAuthentication.Controllers
 
          //  return View();
           //  Ho
-
+            throw new Exception();
             var ssd = System.Web.HttpContext.Current.Request.Cookies;
              return View((User as ClaimsPrincipal).Claims);
         }

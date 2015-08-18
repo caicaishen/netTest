@@ -63,11 +63,16 @@ namespace MvcAuthentication.Controllers
         //
         // POST: /Account/Login
         [HttpPost]
-        [MvcAuthentication.Startup.CustomAuthorizeAttri(Roles = "3.2")]
+        //[MvcAuthentication.Startup.CustomAuthorizeAttri(Roles = "3.2")]
+       // [MvcAuthentication.Startup.CustomAuthorizeAttri]
+            [AllowAnonymous]
         public ActionResult Login(LoginViewModel model)
         {
+           // FormsAuthentication.SetAuthCookie(model.Email, false, FormsAuthentication.FormsCookiePath);
+           // HttpContext.User.Identity.Name = "sdf";
+       
           
-            MyPrincipal principal = new MyPrincipal(model.Email);
+            MyPrincipal principal = new MyPrincipal(model.Email,model.Password);
             if (!principal.Identity.IsAuthenticated)
             {
                
@@ -90,11 +95,12 @@ namespace MvcAuthentication.Controllers
               //  User = principal;
                 Hashtable userMessage = new Hashtable();
                 userMessage.Add("UserID", model.Email);
-                userMessage.Add("UserPassword", model.Email);
+                userMessage.Add("UserPassword", model.Password);
                 //Cache CA = new Cache();
                 //CA.Insert("UserMessage", userMessage);
 
                 System.Web.HttpContext.Current.Cache.Insert("UserMessage", userMessage);
+                //System.Web.HttpContext.Current.Cache.Insert()
                 
             //  Cache.Insert("UserMessage", userMessage); 
                 
@@ -104,11 +110,12 @@ namespace MvcAuthentication.Controllers
            // User.Identity.u
             UserB.InsertUser(new User { Name = "shens" });
           
-            if (!ModelState.IsValid)
-            {
-                return View();
-            }
-            return View();
+            //if (!ModelState.IsValid)
+            //{
+            //    return View();
+            //}
+            return View("XuLogin");
+          //  this.RedirectToAction("xulogin","account")
            
         }
 
@@ -116,9 +123,11 @@ namespace MvcAuthentication.Controllers
 
         //
         // POST: /Account/VerifyCode
-        [MvcAuthentication.Startup.CustomAuthorizeAttri(Roles="3.2")]
+       // [MvcAuthentication.Startup.CustomAuthorizeAttri(Roles="3.2")]
+        [MvcAuthentication.Startup.CustomAuthorizeAttri]
         public ActionResult XuLogin()
         {
+         var dd=   HttpContext.User;
             return View();
         }
 

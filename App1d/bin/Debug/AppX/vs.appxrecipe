@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SWEETY</Machine>
+    <WindowsUser>sweetyuser</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>53a411ae-c2e7-478a-be3f-fd1b90d04837</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\sweetyuser\Documents\GitHub\App1d\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>C889D317D902346B7170A8F1CA56E29D3B3728FA91503221CEB257821CA8276E</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>53a411ae-c2e7-478a-be3f-fd1b90d04837_1.0.0.0_neutral__vexhm5037pvwa</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>53a411ae-c2e7-478a-be3f-fd1b90d04837_vexhm5037pvwa!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>53a411ae-c2e7-478a-be3f-fd1b90d04837</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=sweetyuser</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\sweetyuser\Documents\GitHub\App1d\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-16T04:55:37.275</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\sweetyuser\Documents\GitHub\App1d\bin\Debug\App1d.exe">
+      <PackagePath>App1d.exe</PackagePath>
+      <Modified>2015-07-16T04:55:36.613</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sweetyuser\Documents\GitHub\App1d\DataModel\SampleData.json">
+      <PackagePath>DataModel\SampleData.json</PackagePath>
+      <Modified>2015-07-16T04:54:05.601</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sweetyuser\Documents\GitHub\App1d\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-09-24T16:00:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sweetyuser\Documents\GitHub\App1d\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-09-24T16:00:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sweetyuser\Documents\GitHub\App1d\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-09-24T16:00:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sweetyuser\Documents\GitHub\App1d\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-09-24T16:00:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sweetyuser\Documents\GitHub\App1d\Assets\LightGray.png">
+      <PackagePath>Assets\LightGray.png</PackagePath>
+      <Modified>2013-09-24T16:00:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sweetyuser\Documents\GitHub\App1d\Assets\MediumGray.png">
+      <PackagePath>Assets\MediumGray.png</PackagePath>
+      <Modified>2013-09-24T16:00:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sweetyuser\Documents\GitHub\App1d\Assets\DarkGray.png">
+      <PackagePath>Assets\DarkGray.png</PackagePath>
+      <Modified>2013-09-24T16:00:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sweetyuser\Documents\GitHub\App1d\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-07-16T04:55:36.266</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sweetyuser\Documents\GitHub\App1d\bin\Debug\HubPage.xbf">
+      <PackagePath>HubPage.xbf</PackagePath>
+      <Modified>2015-07-16T04:55:36.269</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sweetyuser\Documents\GitHub\App1d\bin\Debug\SectionPage.xbf">
+      <PackagePath>SectionPage.xbf</PackagePath>
+      <Modified>2015-07-16T04:55:36.271</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sweetyuser\Documents\GitHub\App1d\bin\Debug\ItemPage.xbf">
+      <PackagePath>ItemPage.xbf</PackagePath>
+      <Modified>2015-07-16T04:55:36.273</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sweetyuser\Documents\GitHub\App1d\bin\Debug\App1d.xr.xml">
+      <PackagePath>App1d.xr.xml</PackagePath>
+      <Modified>2015-07-16T04:55:36.144</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sweetyuser\Documents\GitHub\App1d\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-07-16T04:55:37.039</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
